@@ -1,0 +1,169 @@
+
+.restaurants-page {
+  min-height: 70vh;
+}
+
+.restaurants-hero {
+  background: linear-gradient(120deg, #281343, #7137a9);
+  color: white;
+  text-align: center;
+  padding: 85px 20px;
+}
+
+.restaurants-hero span {
+  color: #d7b6f5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.restaurants-hero h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  margin: 18px 0;
+}
+
+.restaurants-hero p {
+  color: #e5d9ef;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.restaurants-container {
+  padding: 65px 7%;
+}
+
+.restaurants-heading {
+  margin-bottom: 25px;
+}
+
+.restaurants-heading h2 {
+  font-size: 30px;
+  color: #241044;
+  margin-bottom: 8px;
+}
+
+.restaurants-heading p {
+  color: #897f94;
+  font-size: 14px;
+}
+
+.restaurant-filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.restaurant-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 1px solid #e7dfee;
+  border-radius: 9px;
+  padding: 0 15px;
+}
+
+.restaurant-search span {
+  font-size: 25px;
+  color: #7434b8;
+}
+
+.restaurant-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #241044;
+}
+
+.restaurant-filters select {
+  min-width: 180px;
+  padding: 15px;
+  border: 1px solid #e7dfee;
+  border-radius: 9px;
+  background: white;
+  color: #51485d;
+  outline: none;
+  font-size: 14px;
+}
+
+.results-count {
+  color: #897f94;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.restaurants-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.restaurants-message {
+  text-align: center;
+  padding: 50px 10px;
+  color: #81778c;
+}
+
+.restaurants-message.error {
+  color: #c0392b;
+}
+
+.no-restaurants {
+  text-align: center;
+  padding: 65px 15px;
+  background: white;
+  border-radius: 14px;
+}
+
+.no-restaurants h3 {
+  font-size: 22px;
+  color: #241044;
+  margin-bottom: 10px;
+}
+
+.no-restaurants p {
+  color: #81778c;
+  margin-bottom: 20px;
+}
+
+.no-restaurants button {
+  background: #7434b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .restaurants-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .restaurants-container {
+    padding: 45px 5%;
+  }
+
+  .restaurant-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .restaurant-search {
+    width: 100%;
+  }
+
+  .restaurant-filters select {
+    width: 100%;
+  }
+
+  .restaurants-grid {
+    grid-template-columns: 1fr;
+  }
+}

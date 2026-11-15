@@ -1,0 +1,408 @@
+
+.owner-dashboard {
+  min-height: 80vh;
+  padding: 40px 7%;
+  background: #faf8fc;
+}
+
+.owner-loading {
+  text-align: center;
+  padding: 80px 20px;
+  color: #7434b8;
+}
+
+/* WELCOME */
+
+.owner-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 35px;
+  border-radius: 16px;
+  background: linear-gradient(120deg, #281343, #7137a9);
+  color: white;
+  margin-bottom: 40px;
+}
+
+.owner-welcome span {
+  color: #d7b6f5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.owner-welcome h1 {
+  font-size: 32px;
+  margin: 12px 0;
+}
+
+.owner-welcome p {
+  color: #e5d9ef;
+  font-size: 14px;
+}
+
+.owner-welcome button {
+  padding: 14px 22px;
+  background: white;
+  color: #7434b8;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* SECTION HEADINGS */
+
+.owner-section {
+  margin-bottom: 45px;
+}
+
+.owner-section-heading {
+  margin-bottom: 22px;
+}
+
+.owner-section-heading h2 {
+  color: #241044;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.owner-section-heading p {
+  color: #897f94;
+  font-size: 14px;
+}
+
+.owner-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.owner-heading-row button {
+  padding: 11px 18px;
+  border: 1px solid #7434b8;
+  color: #7434b8;
+  background: white;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* STATISTICS */
+
+.owner-stats-section {
+  margin-bottom: 45px;
+}
+
+.owner-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.owner-stat-card {
+  padding: 22px;
+  background: white;
+  border: 1px solid #eee8f3;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(36, 16, 68, 0.04);
+}
+
+.owner-stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.owner-stat-top > span:first-child {
+  color: #897f94;
+  font-size: 13px;
+}
+
+.owner-stat-icon {
+  color: #7434b8;
+  font-size: 20px;
+}
+
+.owner-stat-card h3 {
+  color: #241044;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+/* RESTAURANTS */
+
+.owner-restaurants-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.owner-restaurant-card {
+  background: white;
+  border: 1px solid #eee8f3;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(36, 16, 68, 0.04);
+}
+
+.owner-restaurant-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.owner-restaurant-content {
+  padding: 20px;
+}
+
+.restaurant-status,
+.booking-status {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.restaurant-status.approved {
+  color: #21834b;
+  background: #e0f5e8;
+}
+
+.restaurant-status.pending {
+  color: #a56b00;
+  background: #fff1d6;
+}
+
+.restaurant-status.rejected {
+  color: #c0392b;
+  background: #ffe4e4;
+}
+
+.owner-restaurant-content h3 {
+  color: #241044;
+  margin: 14px 0 8px;
+  font-size: 19px;
+}
+
+.owner-restaurant-content > p {
+  color: #897f94;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.owner-restaurant-address {
+  line-height: 1.5;
+  min-height: 38px;
+}
+
+.restaurant-booking-count {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border-top: 1px solid #eee8f3;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.restaurant-booking-count strong {
+  color: #7434b8;
+  font-size: 20px;
+}
+
+.restaurant-booking-count span {
+  color: #897f94;
+  font-size: 12px;
+}
+
+.owner-restaurant-content button {
+  width: 100%;
+  padding: 12px;
+  background: #7434b8;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin-top: 17px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* BOOKINGS TABLE */
+
+.owner-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #eee8f3;
+  border-radius: 12px;
+}
+
+.owner-bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+.owner-bookings-table th,
+.owner-bookings-table td {
+  text-align: left;
+  padding: 17px;
+  border-bottom: 1px solid #eee8f3;
+  font-size: 13px;
+}
+
+.owner-bookings-table th {
+  background: #f4eff9;
+  color: #39254f;
+}
+
+.owner-bookings-table td {
+  color: #766b82;
+}
+
+.booking-status.pending {
+  background: #fff1d6;
+  color: #a56b00;
+}
+
+.booking-status.confirmed {
+  background: #e0f5e8;
+  color: #21834b;
+}
+
+.booking-status.completed {
+  background: #e4e9ff;
+  color: #4057ae;
+}
+
+.booking-status.cancelled {
+  background: #f0eaf3;
+  color: #74617f;
+}
+
+.booking-status.rejected {
+  background: #ffe4e4;
+  color: #c0392b;
+}
+
+/* EMPTY */
+
+.owner-empty {
+  background: white;
+  border: 1px solid #eee8f3;
+  border-radius: 12px;
+  padding: 35px;
+  text-align: center;
+  color: #897f94;
+}
+
+.owner-empty h3 {
+  color: #241044;
+  margin-bottom: 10px;
+}
+
+.owner-empty button {
+  background: #7434b8;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 20px;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .owner-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .owner-restaurants-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .owner-dashboard {
+    padding: 25px 5%;
+  }
+
+  .owner-welcome {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+  }
+
+  .owner-welcome h1 {
+    font-size: 25px;
+  }
+
+  .owner-stats-grid,
+  .owner-restaurants-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .owner-heading-row {
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+
+.booking-action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.booking-action-buttons button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.booking-action-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.confirm-booking-action {
+  background: #e3f6ea;
+  color: #1e8449;
+}
+
+.confirm-booking-action:hover:not(:disabled) {
+  background: #cdeed9;
+}
+
+.reject-booking-action {
+  background: #fdeaea;
+  color: #c0392b;
+}
+
+.reject-booking-action:hover:not(:disabled) {
+  background: #f8d3d3;
+}
+
+.complete-booking-action {
+  background: #f3eafb;
+  color: #7434b8;
+}
+
+.complete-booking-action:hover:not(:disabled) {
+  background: #e8d7f7;
+}
+
+.no-action {
+  color: #b0a7ba;
+  font-size: 12px;
+}

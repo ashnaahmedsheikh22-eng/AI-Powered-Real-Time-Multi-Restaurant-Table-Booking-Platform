@@ -1,0 +1,316 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.user-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f7f4;
+  color: #292929;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-sidebar {
+  width: 240px;
+  background: #fff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #eee;
+  position: fixed;
+  height: 100vh;
+}
+
+.dashboard-logo {
+  color: #e87536;
+  font-size: 27px;
+  margin-bottom: 45px;
+}
+
+.dashboard-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard-sidebar button {
+  padding: 13px 15px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #555;
+}
+
+.dashboard-sidebar nav button.active,
+.dashboard-sidebar nav button:hover {
+  background: #fff0e6;
+  color: #e87536;
+}
+
+.dashboard-sidebar .logout-btn {
+  margin-top: auto;
+  color: #d94343;
+}
+
+.dashboard-main {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  padding: 35px;
+}
+
+.dashboard-header {
+  margin-bottom: 25px;
+}
+
+.dashboard-header h2 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+.dashboard-header p {
+  color: #777;
+  margin: 0;
+}
+
+.welcome-banner {
+  background: linear-gradient(120deg, #f28b4b, #e65c35);
+  color: white;
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 30px;
+}
+
+.welcome-banner h2 {
+  font-size: 27px;
+  margin-top: 0;
+}
+
+.welcome-banner p {
+  margin-bottom: 22px;
+}
+
+.welcome-banner button,
+.restaurant-info button {
+  border: none;
+  background: white;
+  color: #e87536;
+  padding: 12px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  background: white;
+  padding: 23px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+}
+
+.stat-card h3 {
+  color: #e87536;
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.stat-card p {
+  color: #777;
+  margin: 0;
+}
+
+.dashboard-section {
+  margin-bottom: 35px;
+}
+
+.dashboard-section h2 {
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-heading button {
+  border: none;
+  background: transparent;
+  color: #e87536;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.booking-list {
+  display: grid;
+  gap: 14px;
+}
+
+.booking-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+}
+
+.booking-card h4 {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+.booking-card p {
+  margin: 5px 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.booking-status {
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+  background: #eee;
+}
+
+.booking-status.pending {
+  background: #fff1cf;
+  color: #9b6b00;
+}
+
+.booking-status.confirmed {
+  background: #dff5e6;
+  color: #208044;
+}
+
+.booking-status.completed {
+  background: #e5e9ff;
+  color: #4754a5;
+}
+
+.booking-status.cancelled,
+.booking-status.rejected {
+  background: #ffe4e4;
+  color: #c33;
+}
+
+.empty-message {
+  background: white;
+  color: #777;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.restaurant-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  padding: 18px;
+}
+
+.restaurant-info h3 {
+  margin: 0 0 10px;
+}
+
+.restaurant-info p {
+  color: #777;
+  font-size: 14px;
+}
+
+.restaurant-info button {
+  background: #e87536;
+  color: white;
+  margin-top: 10px;
+}
+
+.dashboard-loading,
+.dashboard-error {
+  padding: 50px;
+  text-align: center;
+}
+
+.dashboard-error button {
+  padding: 10px 18px;
+  background: #e87536;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .restaurant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .user-dashboard {
+    display: block;
+  }
+
+  .dashboard-sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .dashboard-sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .dashboard-sidebar .logout-btn {
+    margin-top: 15px;
+  }
+
+  .dashboard-main {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .stats-grid,
+  .restaurant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
